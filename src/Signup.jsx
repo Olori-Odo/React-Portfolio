@@ -6,7 +6,7 @@ const SignUp = ()=>{
     return(
 
         <>
-            <h1>Sign Up Form</h1>
+            <h1>Sign Up Page</h1>
             <Sform/>
         </>
 
