@@ -1,16 +1,11 @@
 import React from "react";
-import Sform from './Sform'
 
-const SignUp = ()=>{
+const SignUp = () => {
+  return (
+    <>
+      <h1>Sign Up Page</h1>
+    </>
+  );
+};
 
-    return(
-
-        <>
-            <h1>Sign Up Page</h1>
-            <Sform/>
-        </>
-
-    )
-}
-
-export default SignUp
+export default SignUp;
