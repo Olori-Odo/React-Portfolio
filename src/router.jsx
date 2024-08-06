@@ -6,7 +6,7 @@ import Project from "./pages/Project";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 
-const router = [
+const router = createBrowserRouter([
   {
     path: "/",
     children: [
@@ -36,6 +36,6 @@ const router = [
       },
     ],
   },
-];
+]);
 
 export default router;
