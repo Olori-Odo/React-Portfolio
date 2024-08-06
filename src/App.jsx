@@ -1,13 +1,14 @@
 import { useState } from "react";
-import SignUp from "./Signup";
 import "./App.css";
+import { RouterProvider } from "react-router-dom";
+import router from "./router";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
     <>
-      <SignUp />
+      <RouterProvider router={router} />
     </>
   );
 }
