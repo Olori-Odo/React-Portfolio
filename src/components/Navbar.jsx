@@ -1,7 +1,9 @@
 import React from "react";
-import Logo from "../assets/AkinDev.png";
+import Logo from "../assets/dev-logo.png";
 import Links from "../layout/Links";
 import { Outlet, Link } from "react-router-dom";
+import { CiMenuBurger } from "react-icons/ci";
+import { TiThMenuOutline } from "react-icons/ti";
 
 const Navbar = () => {
   const Link = [
@@ -14,16 +16,18 @@ const Navbar = () => {
     <>
       <nav>
         <img src={Logo} alt="Logo" />
-        <div>
+        <div className="nav-links">
           {Link.map(({ to, label, id }) => (
-            <Links to={to} key={id}>
+            <Links className="links" to={to} key={id}>
               {label}
             </Links>
           ))}
         </div>
-        <div>
+        <div className="search">
           <p>Search</p>
         </div>
+        <CiMenuBurger />
+        <TiThMenuOutline />
       </nav>
       <Outlet />
     </>
