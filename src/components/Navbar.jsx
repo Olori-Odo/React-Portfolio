@@ -46,10 +46,10 @@ const Navbar = () => {
             </Link>
           </li>
         </ul>
-        <div className="search">
+        {/* <div className="search">
           <input type="text" placeholder="Search..." />
           <CiSearch className="fasearch" />
-        </div>
+        </div> */}
         <CiMenuBurger className="menu" />
         {/* <TiThMenuOutline className="menu" /> */}
       </nav>
